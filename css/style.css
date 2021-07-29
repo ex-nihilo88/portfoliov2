@@ -112,9 +112,15 @@ h6 {
 [class*="_stat"] span,
 [class*="about_me"] span {
   font-size: 1rem;
-  color: var(--light-blue);
+  color: var(--black-blue);
   font-weight: var(--font-black);
   line-height: 0;
+  /*
+  background-color: var(--black-blue);
+  padding: .5rem;
+  width: 50%;  */
+
+
 }
 
 [class*="_stat"] h6,
@@ -167,8 +173,9 @@ img {
 }
 
 .header_img {
-  background-color: var(--grey);
-  border-radius: 50vh;
+  background-color: var(--grey); clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+  /*   border-radius: 50vh;  */
+
   margin-bottom: 2em;
   padding: 10%;
   grid-column: 3 / 11;
@@ -294,6 +301,12 @@ img {
   color: var(--light-blue);
   font-weight: var(--font-black);
   margin-bottom: 1rem;
+  background-color: var(--black-blue);
+clip-path: polygon(0 0, 80% 0, 80% 39%, 90% 39%, 90% 70%, 100% 69%, 100% 100%, 0 100%);
+
+
+  padding: .5rem;
+  width: 50%;
 }
 [class*="project_block"] h1 {
   font-size: 2.25em;
